@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  /* Initialize the viewport (size of the window or webpage) to however the display is (makes sizing relative). */
+  <!--Initialize the viewport (size of the window or webpage) to however the display is (makes sizing relative). -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
@@ -48,7 +48,7 @@ ul li:nth-child(odd) {
   background: #f9f9f9;
 }
 
-/* Darker background-color when cursor is hovering over the item element */
+/* Aesthetic purpose: Darker background-color when cursor is hovering over the item element */
 ul li:hover {
   background: #ddd;
 }
@@ -138,21 +138,22 @@ input {
 </head>
 <body style="background-color:#adcceb;">
 
-  /* Adding the text into the headers and Add-on box (initialize size and font) */
+  <!--Adding the text into the headers and Add-on box (initialize size and font) -->
 <div id="myDIV" class="header">
   <font face = "Courier" size = "6">- - My To-Do List - -</font><br />
   <input type="text" id="myInput" placeholder="What do you need to do?">
   <span onclick="newElement()" class="addBtn">Add it in!</span>
 </div>
 
-  /* Testing some task items here.*/
+  <!-- Testing some task items here.-->
 <ul id="myUL">
  <li>Testing 1</li>
   <li class="checked">Testing Checked 1</li>
 </ul>
 
-  /* Java script functions*/
+ 
 <script>
+// Java Script Functions
 // Create a "close" button and append it to each list item. This will give a close button to each of the task item added into the list.
 var myNodelist = document.getElementsByTagName("LI");
 var i;
